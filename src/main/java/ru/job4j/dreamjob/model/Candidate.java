@@ -7,13 +7,13 @@ public class Candidate {
 
     private int id;
     private String name;
-    private String Description;
+    private String description;
     private LocalDateTime createDate;
 
     public Candidate(int id, String name, String description, LocalDateTime createDate) {
         this.id = id;
         this.name = name;
-        Description = description;
+        this.description = description;
         this.createDate = createDate;
     }
 
@@ -34,11 +34,11 @@ public class Candidate {
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
 
     public LocalDateTime getCreateDate() {
