@@ -31,7 +31,7 @@ public class MemoryCandidateRepository implements CandidateRepository {
 
     @Override
     public Candidate save(Candidate candidate) {
-        candidate.setId(nextId.incrementAndGet());
+        candidate.setId(nextId.getAndIncrement());
         candidates.put(candidate.getId(), candidate);
         return candidate;
     }
