@@ -4,12 +4,10 @@ import org.springframework.stereotype.Service;
 import ru.job4j.dreamjob.model.Vacancy;
 import ru.job4j.dreamjob.repository.VacancyRepository;
 
-import javax.annotation.concurrent.ThreadSafe;
 import java.util.Collection;
 import java.util.Optional;
 
 @Service
-@ThreadSafe
 public class SimpleVacancyService implements VacancyService {
 
     private final VacancyRepository vacancyRepository;
