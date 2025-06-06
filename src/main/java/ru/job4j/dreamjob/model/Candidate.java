@@ -9,15 +9,25 @@ public class Candidate {
     private String name;
     private String description;
     private LocalDateTime createDate = LocalDateTime.now();
+    private int cityId;
 
     public Candidate() {
     }
 
-    public Candidate(int id, String name, String description, LocalDateTime createDate) {
+    public Candidate(int id, String name, String description, LocalDateTime createDate, int cityId) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.createDate = createDate;
+        this.cityId = cityId;
+    }
+
+    public int getCityId() {
+        return cityId;
+    }
+
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
     }
 
     public int getId() {
