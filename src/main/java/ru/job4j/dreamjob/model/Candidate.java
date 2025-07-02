@@ -75,7 +75,7 @@ public class Candidate {
     }
 
     public LocalDateTime getCreationDate() {
-        return getCreationDate();
+        return creationDate;
     }
 
     public void setCreationDate(LocalDateTime creationDate) {
