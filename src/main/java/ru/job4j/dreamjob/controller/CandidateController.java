@@ -29,7 +29,7 @@ public class CandidateController {
         return "candidates/list";
     }
 
-    @GetMapping("create")
+    @GetMapping("/create")
     public String getCreatedCandidate(Model model) {
         model.addAttribute("cities", cityService.findAll());
         return "candidates/create";
