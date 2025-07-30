@@ -12,7 +12,7 @@ public class User {
             "password", "password"
     );
 
-    private int id;
+    private Integer id;
 
     private String email;
 
@@ -20,18 +20,18 @@ public class User {
 
     private String password;
 
-    public User(int id, String email, String name, String password) {
+    public User(Integer id, String email, String name, String password) {
         this.id = id;
         this.email = email;
         this.name = name;
         this.password = password;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
